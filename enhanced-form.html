@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enhanced HTML5 page with lists, tables, media, and a fully validated form." />
+  <meta name="author" content="Evans Macharia" />
+  <title>Enhanced HTML5 Form & Media</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, main, footer {
+      padding: 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+    header {
+      background: #004466;
+      color: #fff;
+    }
+    h1, h2, h3 {
+      color: #004466;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.5em;
+      text-align: left;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    fieldset {
+      border: 1px solid #aaa;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 0.5em 0 0.2em;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #004466;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background: #006699;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Form & Media</h1>
+    <p>Showcasing lists, tables, media, and a fully validated form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>My Top Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML5 & CSS3</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Learning Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Data Analysis</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Web Development</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Machine Learning</td>
+            <td>2.5 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Project Demo Video</h2>
+      <video controls>
+        <source src="project-demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h3>Profile Image</h3>
+      <img src="C:\Users\USER\Desktop\PLP_WEB_DEV\Assignment_1\Macharia_Evans_Kariuki.jpg" alt="Evans Macharia Passport Picture" />
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?\d{10,15}$" required />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Professional Details</legend>
+          <label for="position">Position Interested In:</label>
+          <select id="position" name="position" required>
+            <option value="">--Select--</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="data-scientist">Data Scientist</option>
+          </select>
+
+          <label for="portfolio">Portfolio URL:</label>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com" />
+
+          <label for="resume">Upload Resume (PDF only):</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Evans Macharia. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
